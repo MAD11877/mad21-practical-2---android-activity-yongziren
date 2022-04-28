@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClick(View v) {
         Button Btn = findViewById(R.id.FOLLOW);
-        if (user.Followed == false) {
+        if (!user.Followed) {
             Btn.setText("UNFOLLOW");
             user.Followed = true;
         }
-        else if (user.Followed) {
+        else{
             Btn.setText("FOLLOW");
             user.Followed = false;
         }

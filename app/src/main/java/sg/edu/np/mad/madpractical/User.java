@@ -6,7 +6,7 @@ public class User {
     Integer Id;
     Boolean Followed;
 
-    public User(String name, String description, int id, boolean followed) {
+    public User(String name, String description, Integer id, Boolean followed) {
         this.Name = name;
         this.Description = description;
         this.Id = id;
